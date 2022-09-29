@@ -29,6 +29,7 @@ a {
 
 /* Create two equal columns that float next to each other */
 .column-2 {
+  
   float: left;
   width: 45%;
   padding: 40px;
@@ -85,6 +86,7 @@ a {
 }
 /* Large profile image */
 .large-profile {
+  float: right;
   background: url('../images/large-profile.jpg');
   background-size: cover;
   background-position: center;
@@ -117,31 +119,43 @@ a {
 
 .project-1 {
   background: url('../images/binary.jpg');
-  background-size: cover;
+  
 }
 
 .project-2 {
   background-color:#112d4e;
+  height: 250px;
+  width: 385px;
 }
 
 .project-3 {
   background-color:#209BFF;
+  height: 250px;
+  width: 385px;
 }
 
 .project-4 {
   background-color:#112d4e;
+  height: 250px;
+  width: 385px;
 }
 
 .project-5 {
   background-color:#112d4e;
+  height: 250px;
+  width: 385px;
 }
 
 .project-6 {
   background-color:#209BFF;
+  height: 250px;
+  width: 385px;
 }
 
 .project-7 {
     background-color:#112d4e;
+    height: 250px;
+  width: 385px;
 }
 
 .project-8 {
@@ -230,6 +244,20 @@ a {
   margin-bottom: 40px;
   background-color:white;
 }
+.column-2b {
+  float: right;
+  width: 45%;
+  padding: 40px;
+  padding-left:70px;
+  padding-right: 70px;
+  padding-bottom:60px;
+  height:450px;
+  margin:30px;
+  margin-right:30px;
+  margin-bottom: 40px;
+  background-color:white;
+}
+
 
 /* Section 6: Featured Quote  */
 
@@ -292,4 +320,9 @@ a.menu:hover {
 .icon-style:hover {
   background-color:#112d4e;
   padding:5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
 }
