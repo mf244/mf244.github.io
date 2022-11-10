@@ -57,6 +57,20 @@ a {
   line-height:2;
 }
 
+.center-body {
+ 
+ 
+  padding: 70px;
+  padding-left:70px;
+  padding-right: 70px;
+  height: 475px;
+  margin:30px;
+  margin-right:30px;
+  margin-bottom: 70px;
+  background-color: #FFFFFF;
+  line-height:2;
+}
+
 .contactcolumn-2 {
   float: left;
   width: 45%;
