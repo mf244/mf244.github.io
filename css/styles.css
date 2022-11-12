@@ -69,33 +69,7 @@ a {
  
 }
 
-.contactcolumn-2 {
-  float: left;
-  width: 45%;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  height: 250px;
-  margin:30px;
-  margin-right:30px;
-  margin-bottom: 70px;
-  background-color: #FFFFFF;
- 
-}
 
-.contactcolumn-2R {
-  float: right;
-  width: 45%;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  height: 250px;
-  margin:30px;
-  margin-right:30px;
-  margin-bottom: 70px;
-  background-color: #FFFFFF;
-
-}
 /* Large profile image */
 .large-profile {
   float: right;
@@ -198,8 +172,9 @@ a {
   
   height: auto;
   padding-top:70px;
-  padding-left:70px;
   padding-bottom:70px;
+ 
+ 
   margin:5%;
   margin-bottom:50px;
   margin-top: 75px;
@@ -218,6 +193,11 @@ a {
 
 .column-2-height {
   height: 475px;
+}
+
+.contact-font {
+  font-size: 0.5vw;
+  
 }
 
 .column-2a {
