@@ -18,8 +18,8 @@ a {
   padding: 40px;
   text-align: center;
   background: #ffffff;
-  margin:30px;
-  font-size:20px;
+  margin: 5%;
+ 
   border: 10px solid #000000;
 }
 /* Include padding and border in total box size*/
@@ -31,16 +31,14 @@ a {
 .column-2 {
   
   float: left;
-  width: 45%;
+  width: 40%;
   padding: 40px;
   padding-left:70px;
   padding-right: 70px;
   height: 475px;
-  margin:30px;
-  margin-right:30px;
-  margin-bottom: 70px;
+  margin:5%;
   background-color: #FFFFFF;
-  line-height:2;
+  
 }
 
 .column-2R {
@@ -54,7 +52,7 @@ a {
   margin-right:30px;
   margin-bottom: 70px;
   background-color: #FFFFFF;
-  line-height:2;
+  
 }
 
 .center-body {
@@ -68,7 +66,7 @@ a {
   margin-right:30px;
   margin-bottom: 70px;
   background-color: #FFFFFF;
-  line-height:2;
+ 
 }
 
 .contactcolumn-2 {
@@ -82,7 +80,7 @@ a {
   margin-right:30px;
   margin-bottom: 70px;
   background-color: #FFFFFF;
-  line-height:2;
+ 
 }
 
 .contactcolumn-2R {
@@ -96,7 +94,7 @@ a {
   margin-right:30px;
   margin-bottom: 70px;
   background-color: #FFFFFF;
-  line-height:2;
+
 }
 /* Large profile image */
 .large-profile {
@@ -123,62 +121,35 @@ a {
 
 .column-4 {
   float: left;
-  width: 21%;
-  padding: 10px;
-  margin:20px;
+  
+  margin: 5%;
   height: 250px;
 }
 
 /* Color and Images for Project Containers  */
 
-.project-1 {
+.project-image {
   background: url('../images/binary.jpg');
-  
+  width: 21%;
+  padding: 10px;
 }
 
-.project-2 {
+.project-dark {
   background-color:#112d4e;
-  height: 250px;
-  width: 385px;
+  width: 100%;
+  padding: 10px;
 }
 
-.project-3 {
+.project-light {
   background-color:#209BFF;
-  height: 250px;
-  width: 385px;
-}
-
-.project-4 {
-  background-color:#112d4e;
-  height: 250px;
-  width: 385px;
-}
-
-.project-5 {
-  background-color:#112d4e;
-  height: 250px;
-  width: 385px;
-}
-
-.project-6 {
-  background-color:#209BFF;
-  height: 250px;
-  width: 385px;
-}
-
-.project-7 {
-    background-color:#112d4e;
-    height: 250px;
-  width: 385px;
-}
-
-.project-8 {
-  background: url('../images/binary.jpg');
-  background-size: cover;
+  width: 100%;
+  padding: 10px;
 }
 
 
 .project-text {
+  width: 2px;
+  height: 1px;
   text-align:center;
   font-size:50px;
   color:#000000;
@@ -216,20 +187,20 @@ a {
 
 /* Add space between sections */
 .section-break {
-  margin:50px;
-  height:500px;
+  margin: 5%;
+  height: 500px;
 }
 
 
 
 /* Wide column */
 .column-1 {
-  width: 90%;
+  
   height: auto;
   padding-top:70px;
   padding-left:70px;
   padding-bottom:70px;
-  margin:auto;
+  margin:5%;
   margin-bottom:50px;
   margin-top: 75px;
   background-color:white;
@@ -245,31 +216,37 @@ a {
 
 /* Fifth section */
 
+.column-2-height {
+  height: 475px;
+}
+
 .column-2a {
   float: left;
-  width: 45%;
+  width: 40%;
   padding: 40px;
   padding-left:70px;
   padding-right: 70px;
   padding-bottom:60px;
-  height:450px;
-  margin:30px;
-  margin-right:30px;
-  margin-bottom: 40px;
+  
+  margin: 5%;
+  
   background-color:white;
+
+  font-size: 1.5vw;
 }
 .column-2b {
   float: right;
-  width: 45%;
+  width: 40%;
   padding: 40px;
   padding-left:70px;
   padding-right: 70px;
   padding-bottom:60px;
-  height:450px;
-  margin:30px;
-  margin-right:30px;
-  margin-bottom: 40px;
+  
+  margin:5%;
+  
   background-color:white;
+
+  font-size: 1.5vw;
 }
 
 
@@ -290,7 +267,7 @@ a {
 .quote {
   font-size:80px;
   font-weight:bold;
-  line-height: 1;
+  
   text-align: center;
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: black;
