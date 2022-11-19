@@ -98,39 +98,26 @@ a {
   
   margin: 5%;
   height: 250px;
+  
 }
 
 /* Color and Images for Project Containers  */
 
-.project-image {
-  background: url('../images/binary.jpg');
-  width: 21%;
-  padding: 10px;
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.project-dark {
-  background-color:#112d4e;
-  width: 100%;
-  padding: 10px;
+.project-box {
+  
+  
+  padding: 40px;
+  padding-left:70px;
+  padding-right: 70px;
+  height: 200px;
+  margin:5%;
+  background-color: #FFFFFF;
 }
-
-.project-light {
-  background-color:#209BFF;
-  width: 100%;
-  padding: 10px;
-}
-
-
-.project-text {
-  width: 2px;
-  height: 1px;
-  text-align:center;
-  font-size:50px;
-  color:#000000;
-}
-
-
-
 /* Hover classes for individual project boxes */
 
 .project-2:hover {
@@ -173,7 +160,7 @@ a {
   height: auto;
   padding-top:70px;
   padding-bottom:70px;
- 
+  padding-left: 70px;
  
   margin:5%;
   margin-bottom:50px;
