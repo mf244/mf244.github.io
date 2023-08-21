@@ -1,286 +1,65 @@
-/* General Website Style rules */
 body {
-  font-family: "Helvetica", Sans-Serif;
-  background-image: url("../images/background-image.jpg");
-}
-a {
-  color: #112d4e; 
-}
-
-/*Top header profile image*/
-.profile-small {
-  height:150px;
-  border-radius: 50%;
-  border: 10px solid #112d4e;
-}
-/* Header Title */
-.header {
-  padding: 40px;
-  text-align: center;
-  background: #ffffff;
-  margin: 5%;
- 
-  border: 10px solid #000000;
-}
-/* Include padding and border in total box size*/
-* {
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+    transition: background-color 0.3s ease;
 }
 
-/* Create two equal columns that float next to each other */
-.column-2 {
-  
-  float: left;
-  width: 40%;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  height: 475px;
-  margin:5%;
-  background-color: #FFFFFF;
-  
+header {
+    background-color: #333;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 }
 
-.column-2R {
-  float: right;
-  width: 45%;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  height: 475px;
-  margin:30px;
-  margin-right:30px;
-  margin-bottom: 70px;
-  background-color: #FFFFFF;
-  
+.page-selection {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-.center-body {
- 
- 
-  padding: 70px;
-  padding-left:70px;
-  padding-right: 70px;
-  height: 475px;
-  margin:30px;
-  margin-right:30px;
-  margin-bottom: 70px;
-  background-color: #FFFFFF;
- 
+.page-selection li {
+    margin: 0 10px;
 }
 
-
-/* Large profile image */
-.large-profile {
-  float: right;
-  background: url('../images/large-profile.jpg');
-  background-size: cover;
-  background-position: center;
+.page-selection a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
 }
 
-/*  Section 3  */
-
-.section-heading {
-  text-align:center;
-  color:#ffffff;
-  margin-top: 150px;
-  margin-bottom:70px;
-  font-size: 35px;
-  -webkit-text-stroke-width: 2px;
-  -webkit-text-stroke-color: black;
+.page-selection a:hover {
+    color: #00a0a0;
 }
 
-
-/* Sizing for Project Containers  */
-
-.column-4 {
-  float: left;
-  
-  margin: 5%;
-  height: 250px;
-  
+.content {
+    padding: 20px;
 }
 
-/* Color and Images for Project Containers  */
-
-.wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+h1, h2 {
+    color: #00a0a0;
 }
 
-.project-box {
-  
-  
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  height: 200px;
-  margin:5%;
-  background-color: #FFFFFF;
-}
-/* Hover classes for individual project boxes */
-
-.project-2:hover {
-  background-color:#FFFFFF;
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #000;
+    color: #ddd;
 }
 
-.project-3:hover {
-   background-color: #FFFFFF;
+body.dark-mode header {
+    background-color: #222;
 }
 
-.project-4:hover {
-   background-color: #FFFFFF;
+body.dark-mode .page-selection a {
+    color: #ddd;
 }
 
-.project-5:hover {
-   background-color: #FFFFFF;
-}
-
-.project-6:hover {
-   background-color: #FFFFFF;
-}
-
-.project-7:hover {
-   background-color: #FFFFFF;
-}
-
-/* Section 4 */
-
-/* Add space between sections */
-.section-break {
-  margin: 5%;
-  height: 500px;
-}
-
-
-
-/* Wide column */
-.column-1 {
-  
-  height: auto;
-  padding-top:70px;
-  padding-bottom:70px;
-  padding-left: 70px;
- 
-  margin:5%;
-  margin-bottom:50px;
-  margin-top: 75px;
-  background-color:white;
-}
-
-/* Table formatting */
-.table-style {
-  width:100%;
-  border-spacing: 24px;
-}
-
-
-
-/* Fifth section */
-
-.column-2-height {
-  height: 475px;
-}
-
-.contact-font {
-  font-size: 0.5vw;
-  
-}
-
-.column-2a {
-  float: left;
-  width: 40%;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  padding-bottom:60px;
-  
-  margin: 5%;
-  
-  background-color:white;
-
-  font-size: 1.5vw;
-}
-.column-2b {
-  float: right;
-  width: 40%;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  padding-bottom:60px;
-  
-  margin:5%;
-  
-  background-color:white;
-
-  font-size: 1.5vw;
-}
-
-
-/* Section 6: Featured Quote  */
-
-.column-quote {
-  width: 90%;
-  height: 475px;
-  padding: 40px;
-  padding-left:70px;
-  padding-right: 70px;
-  padding-bottom:100px;
-  margin:auto;
-  margin-bottom:150px;
-  border: 20px solid #112d4e;
-}
-
-.quote {
-  font-size:80px;
-  font-weight:bold;
-  
-  text-align: center;
-  -webkit-text-stroke-width: 5px;
-  -webkit-text-stroke-color: black;
-  color: #ffffff;
-}
-
-.footer {
-  position:fixed;
-  bottom:0;
-  left:0;
-  width:100%;
-  height: 90px;
-  background-color: #D0DAEE;
-}
-
-
-.footer-text-left {
-  font-size:25px;
-  padding-left:40px;
-  float:left;
-  word-spacing:20px;
-}
-
-a.menu:hover {
-  background-color:#112d4e;
-  font-size:20px;
-}
-
-.footer-content-right {
-  padding-right:40px;
-  margin-top:20px;
-  float:right;
-}
-
-.icon-style {
-  height:40px;
-  margin-left:20px;
-  margin-top:5px;
-}
-
-.icon-style:hover {
-  background-color:#112d4e;
-  padding:5px;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
+body.dark-mode .page-selection a:hover {
+    color: #00a0a0;
 }
