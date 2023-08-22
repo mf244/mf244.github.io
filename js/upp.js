@@ -10,13 +10,25 @@ document.addEventListener("DOMContentLoaded", function () {
             playTone(note, octave);
         });
 
+        button.addEventListener("touchstart", (event) => {
+            event.preventDefault(); // Prevents scrolling and other default touch behavior
+            const note = button.getAttribute("data-note");
+            const octave = button.getAttribute("data-octave");
+            playTone(note, octave);
+        });
+
+        const releaseButton = () => {
+            stopTone();
+            button.removeEventListener("touchend", releaseButton);
+            button.removeEventListener("touchcancel", releaseButton);
+        };
+
         button.addEventListener("mouseup", () => {
             stopTone();
         });
 
-        button.addEventListener("mouseout", () => {
-            stopTone();
-        });
+        button.addEventListener("touchend", releaseButton);
+        button.addEventListener("touchcancel", releaseButton);
     });
 
     function playTone(note, octave) {
