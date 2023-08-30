@@ -50,11 +50,16 @@ document.addEventListener("DOMContentLoaded", function () {
     function getFrequency(note, octave) {
         const baseFrequency = {
             C: 261.63,
+            CS: 277.18,
             D: 293.66,
+            DS: 311.13,
             E: 329.63,
             F: 349.23,
+            FS: 369.99,
             G: 392.00,
+            GS: 415.30,
             A: 440.00,
+            AS: 466.16,
             B: 493.88
         };
 
