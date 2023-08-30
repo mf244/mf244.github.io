@@ -70,6 +70,7 @@ header {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    width: 200px;
 }
 
 .pitch-button:hover {
