@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
         button.addEventListener("touchstart", (event) => {
-            event.preventDefault(); // Prevents scrolling and other default touch behavior
+            event.preventDefault();
             const note = button.getAttribute("data-note");
             const octave = button.getAttribute("data-octave");
             playTone(note, octave);
@@ -19,8 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const releaseButton = () => {
             stopTone();
-            button.removeEventListener("touchend", releaseButton);
-            button.removeEventListener("touchcancel", releaseButton);
         };
 
         button.addEventListener("mouseup", () => {
@@ -35,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function () {
         stopTone();
 
         oscillator = audioContext.createOscillator();
-        oscillator.type = "sine"; // Sine wave oscillator
+        oscillator.type = "sine";
         oscillator.frequency.setValueAtTime(getFrequency(note, octave), audioContext.currentTime);
         oscillator.connect(audioContext.destination);
         oscillator.start();
